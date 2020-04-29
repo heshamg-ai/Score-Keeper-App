@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <TextView
+        android:id="@+id/TeamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team A"
+        android:textSize="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+       />
+
+    <TextView
+        android:id="@+id/TeamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team B"
+        android:layout_alignParentRight="true"
+        android:textSize="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+    android:id="@+id/zeroA"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0"
+    android:layout_below="@id/TeamA"
+    android:layout_marginLeft="66dp"
+    android:layout_marginTop="40dp"
+    android:textSize="40dp"
+    />
+
+    <TextView
+        android:id="@+id/zeroB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@id/TeamB"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="66dp"
+        android:layout_marginTop="40dp"
+        android:textSize="40dp"
+        />
+
+
+    <Button
+        android:id="@+id/threeA"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/zeroA"
+        android:text="+3 POINTS"
+        android:onClick="plus3A"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <Button
+        android:id="@+id/threeB"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/zeroB"
+        android:layout_alignParentRight="true"
+        android:text="+3 POINTS"
+        android:onClick="plus3B"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <Button
+        android:id="@+id/twoA"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/threeA"
+        android:text="+2 POINTS"
+        android:onClick="plus2A"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <Button
+        android:id="@+id/twoB"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/threeB"
+        android:layout_alignParentRight="true"
+        android:text="+2 POINTS"
+        android:onClick="plus2B"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <Button
+        android:id="@+id/freeA"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/twoA"
+        android:text="FREE THROW"
+        android:onClick="freeA"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <Button
+        android:id="@+id/freeB"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/twoB"
+        android:layout_alignParentRight="true"
+        android:text="FREE THROW"
+        android:onClick="freeB"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="Reset"
+        android:onClick="Reset"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        />
+
+
+
+
+</RelativeLayout>
